@@ -65,6 +65,8 @@ RUBY ON RAILS
     private
     #######    
     
+12. Skinny controllers, fat models. In particular, avoid ActiveRecord searches in controllers, move to models    
+    
 
 For other rules, see: https://github.com/bbatsov/ruby-style-guide
 
