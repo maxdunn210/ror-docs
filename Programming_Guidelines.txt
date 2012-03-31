@@ -1,0 +1,70 @@
+Programming Guidelines
+
+Author: Max Dunn
+Date: Mar-2012
+
+RUBY ON RAILS
+
+1. Indent 2 spaces, no tabs
+
+    def some_method
+      do_something
+    end
+
+2. No spaces after ( , [ or before ], )
+
+    some(arg).other
+    [1, 2, 3].length
+
+3. Use spaces around operators, after commas, colons and semicolons, around { and before }
+
+    sum = 1 + 2
+    a, b = 1, 2
+    1 > 2 ? true : false; puts 'Hi'
+    [1, 2, 3].each { |e| puts e }
+    def foo(bar, baz = 0)
+
+4. Use empty lines between defs and to break up a method into logical paragraphs.
+
+    def some_method
+      data = initialize(options)
+    
+      data.manipulate!
+    
+      data.result
+    end
+    
+    def some_method
+      result
+    end
+
+5. Maximum line length is 80 characters
+
+6. Use &&/|| for boolean expressions, and/or for control flow. (Rule of thumb: If you have to use outer parentheses, you are using the wrong operators.)
+
+    # boolean expression
+    if some_condition && some_other_condition
+      do_something
+    end
+    
+    # control flow
+    document.saved? or document.save!
+
+7. Use descriptive names for objects and methods. 
+
+8. Use single character variable names only in single line statements 
+
+9. Always use parenthesis for method arguments, except commonly used methods like "require" and "include"
+
+10. Write self documenting code that doesn't need comments. If you're about to add a comment, ask yourself, 
+    "How can I improve the code so that this comment isn't needed?"
+    
+11. Highlight private and protected sections
+
+    #######
+    private
+    #######    
+    
+
+For other rules, see: https://github.com/bbatsov/ruby-style-guide
+
